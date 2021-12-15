@@ -26,6 +26,7 @@ public class Shop {
         p1 = productManager.reviewProduct(p1, FIVE_STAR, "Perfect tea");
         p1 = productManager.reviewProduct(p1, THREE_STAR, "Just add some lemon");
         productManager.printProductReport();
+
         //        Product p2 = productManager.createProduct(102, "Coffee", BigDecimal.valueOf(1.99), Rating.FOUR_STAR);
 //        Product p3 = productManager.createProduct(103, "Cake", BigDecimal.valueOf(1.99), Rating.FIVE_STAR, LocalDate.now().plusDays(2));
 //        Product p4 = productManager.createProduct(105, "Cookie", BigDecimal.valueOf(3.99), Rating.TWO_STAR, LocalDate.now());
