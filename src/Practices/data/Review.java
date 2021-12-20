@@ -4,7 +4,7 @@ package Practices.data;
  * @author Nabil Jarrai
  * @since 12/14/2021
  */
-public class Review {
+public class Review implements Comparable<Review> {
 
     private Rating rating;
     private String comments;
@@ -28,5 +28,10 @@ public class Review {
                 "rating=" + rating +
                 ", comments='" + comments + '\'' +
                 '}';
+    }
+
+    @Override
+    public int compareTo(Review review) {
+        return review.rating.ordinal() - this.rating.ordinal();
     }
 }
